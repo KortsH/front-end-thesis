@@ -25,10 +25,9 @@ export function BlockItem({ block }: BlockItemProps) {
   const handleMouseEnter = () => {
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
-    const desired = rect.height * 3;      // 3× height
-    const margin = 8;                     // a little breathing room
+    const desired = rect.height * 3;      
+    const margin = 8;                    
     const spaceBelow = window.innerHeight - rect.bottom - margin;
-    const spaceAbove = rect.top - margin;
 
     setRevealStyle({
       top: "100%",
@@ -39,7 +38,6 @@ export function BlockItem({ block }: BlockItemProps) {
   };
 
   const handleMouseLeave = () => {
-    // collapse back
     setRevealStyle({
       maxHeight: 0,
       padding: 0,

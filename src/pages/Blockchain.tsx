@@ -1,10 +1,8 @@
-// src/pages/Blockchain.tsx
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getChain } from "../utils/api.ts";
 import Header from "../components/Header.tsx";
 import { BlockItem } from "../components/BlockItem.tsx";
 import { useTranslations } from "../contexts/TranslationContext.tsx";
-import "../blockchain.css";
 
 interface Block {
   index: number;
