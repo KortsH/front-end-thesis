@@ -1,0 +1,12 @@
+{
+  "header": {
+    "title": "Welcome",
+    "view_chain": "View Blockchain",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Permissioned Social-Media Chain",
+    "description": "A proof-of-concept chain for storing posts. Browse blocks, verify integrity, and inspect data.",
+    "view_chain": "🚀 View the Chain"
+  }
+}

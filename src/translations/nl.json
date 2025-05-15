@@ -1,0 +1,12 @@
+{
+  "header": {
+    "title": "Welkom!",
+    "view_chain": "Bekijk blockchain",
+    "language": "Taal"
+  },
+  "home": {
+    "title": "Toegestane Sociale Media Blockchain",
+    "description": "Een proof-of-concept blockchain om posts op te slaan. Bekijk blokken, controleer integriteit en onderzoek data.",
+    "view_chain": "🚀 Bekijk de Blockchain"
+  }
+}

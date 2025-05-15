@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Blockchain from "./pages/Blockchain.tsx";
 
-function App() {
+import { TranslationProvider } from "./contexts/TranslationContext.tsx";
+import { ThemeProvider } from "./contexts/ThemeContext.tsx";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TranslationProvider>
+      <ThemeProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chain" element={<Blockchain />} />
+        </Routes>
+      </ThemeProvider>
+    </TranslationProvider>
   );
 }
-
-export default App;
