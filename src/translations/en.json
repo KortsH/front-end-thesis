@@ -19,11 +19,19 @@
     "note_other_browsers_title": "Using Firefox or Safari?",
     "note_other_browsers_desc": "This demo only works on Chromium-based browsers. For other platforms, contact the developer.",
     "screenshots_coming_soon": "Screenshots coming soon...",
-    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025",
+    "view_quotes": "🔍 View Quotes"
   },
   "blockchain": {
     "title": "Blockchain Explorer",
     "description": "A frontend connected to our permissioned-chain backend. Hover a block to reveal its data.",
     "connected": "Data fetched live from the server at /chain"
+  },
+  "quotes": {
+    "quotes_title": "Quotes Database",
+    "search_placeholder": "Search quotes...",
+    "filter_all": "All authors",
+    "loading": "Loading quotes…",
+    "no_results": "No quotes found."
   }
 }

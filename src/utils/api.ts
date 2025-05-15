@@ -1,4 +1,7 @@
+import type { Quote } from '../types/quote.ts';
+
 const API = process.env.REACT_APP_API_BASE_URL as string;
+const DATABASE_API = process.env.REACT_APP_API_DATABASE_URL as string;
 
 export async function getChain() {
   const res = await fetch(`${API}/chain`);
@@ -10,4 +13,28 @@ export async function getChain() {
   if (Array.isArray(data)) return data;
   if (Array.isArray(data.chain)) return data.chain;
   return [];
+}
+
+export async function getQuotes(
+  search?: string,
+  author?: string
+): Promise<Quote[]> {
+  const params = new URLSearchParams();
+  if (search)  params.append("search", search);
+  if (author)  params.append("author", author);
+
+  const url =
+    `${DATABASE_API}/api/quotes${params.toString() ? `?${params}` : ""}`;
+
+  const res = await fetch(url, {
+    headers: { Accept: "application/json" },
+  });
+  if (!res.ok) {
+    throw new Error(`Network error: ${res.status} ${res.statusText}`);
+  }
+  const data = await res.json();
+  if (!Array.isArray(data)) {
+    throw new Error("Unexpected response shape");
+  }
+  return data;
 }

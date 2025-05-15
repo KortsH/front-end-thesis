@@ -13,17 +13,25 @@
     "install_browser_note": "See demo töötab praegu ainult Chrome’i, Edge’i ja Brave’i brauserites.",
     "step_enable_dev_mode": "Ava chrome://extensions ja lülita paremas ülanurgas sisse 'Arendajarežiim'.",
     "step_go_to_extensions": "Laadi laiendusfail alla ülaloleva nupuga.",
-    "step_unzip": "Unzip allalaaditud failid.", 
+    "step_unzip": "Unzip allalaaditud failid.",
     "step_drag_crx": "Lohista fail laienduste lehele.",
     "step_confirm_add": "Kinnita paigaldus, vajutades 'Lisa laiendus'.",
     "note_other_browsers_title": "Kasutad Firefoxi või Safarit?",
     "note_other_browsers_desc": "See demo töötab ainult Chromiumil põhinevates brauserites. Muude platvormide jaoks võta ühendust arendajaga.",
     "screenshots_coming_soon": "Ekraanipildid varsti saadaval...",
-    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025",
+    "view_quotes": "🔍 Vaata Tsitaate"
   },
   "blockchain": {
     "title": "Plokiahela Uurija",
     "description": "Esikülg, mis on ühendatud sinu lubatud plokiahela taustsüsteemiga. Liiguta kursor ploki peale, et näha andmeid.",
     "connected": "Andmed pärinevad otse serveri endpoint’ist /chain"
+  },
+  "quotes": {
+    "quotes_title": "Tsitaatide andmebaas",
+    "search_placeholder": "Otsi tsitaate…",
+    "filter_all": "Kõik autorid",
+    "loading": "Laen tsitaate…",
+    "no_results": "Tsitaate ei leitud."
   }
 }

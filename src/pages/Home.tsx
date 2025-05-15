@@ -22,6 +22,13 @@ export default function Home() {
             >
               {t("view_chain")}
             </Link>
+
+            <Link
+                to="/quotes"
+                className="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl shadow hover:bg-purple-700 transition"
+              >
+                {t("view_quotes")}
+              </Link>
           </div>
 
           <ExtensionInstructions />

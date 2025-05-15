@@ -19,11 +19,19 @@
     "note_other_browsers_title": "Gebruik je Firefox of Safari?",
     "note_other_browsers_desc": "Deze demo werkt alleen in Chromium-gebaseerde browsers. Neem contact op met de ontwikkelaar voor andere platforms.",
     "screenshots_coming_soon": "Schermafbeeldingen binnenkort beschikbaar...",
-    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025",
+    "view_quotes": "🔍 Bekijk Citaten"
   },
   "blockchain": {
     "title": "Blockchain Verkenner",
     "description": "Een frontend verbonden met je permissioned-chain backend. Zweef over een blok om de data te zien.",
     "connected": "Data live opgehaald van de server via /chain"
+  }, 
+  "quotes": {
+    "quotes_title": "Citaten Database",
+    "search_placeholder": "Zoek citaten…",
+    "filter_all": "Alle auteurs",
+    "loading": "Citaten laden…",
+    "no_results": "Geen citaten gevonden."
   }
 }
