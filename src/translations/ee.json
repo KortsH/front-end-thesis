@@ -8,5 +8,10 @@
     "title": "Lubatud Sotsiaalmeedia Plokiahel",
     "description": "Tõestuskontseptsioon postituste salvestamiseks plokiahelasse. Vaata plokke, kontrolli terviklikkust ja uuri andmeid.",
     "view_chain": "🚀 Vaata Plokiahelat"
+  },
+  "blockchain": {
+    "title": "Plokiahela Uurija",
+    "description": "Esikülg, mis on ühendatud sinu lubatud plokiahela taustsüsteemiga. Liiguta kursor ploki peale, et näha andmeid.",
+    "connected": "Andmed pärinevad otse serveri endpoint’ist /chain"
   }
 }

@@ -8,5 +8,10 @@
     "title": "Toegestane Sociale Media Blockchain",
     "description": "Een proof-of-concept blockchain om posts op te slaan. Bekijk blokken, controleer integriteit en onderzoek data.",
     "view_chain": "🚀 Bekijk de Blockchain"
+  },
+  "blockchain": {
+    "title": "Blockchain Verkenner",
+    "description": "Een frontend verbonden met je permissioned-chain backend. Zweef over een blok om de data te zien.",
+    "connected": "Data live opgehaald van de server via /chain"
   }
 }

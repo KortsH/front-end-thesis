@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   useSetLanguage,
   useCurrentLanguage,
@@ -16,7 +17,9 @@ export default function Header() {
 
   return (
     <header className="p-4 flex justify-between items-center bg-white dark:bg-gray-800 shadow">
-      <h1 className="text-xl font-bold dark:text-white">{t("title")}</h1>
+      <Link to="/" className="text-xl font-bold dark:text-white hover:opacity-80">
+        {t("title")}
+      </Link>
       <div className="flex items-center gap-6">
 
         <div className="flex bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden border border-gray-300 dark:border-gray-600">
