@@ -6,7 +6,7 @@ export default function ExtensionInstructions() {
   return (
     <div className="mt-12 space-y-8">
       <a
-        href={`${process.env.PUBLIC_URL}/demo-extension.crx`}
+        href={`${process.env.PUBLIC_URL}/chrome_extention.zip`}
         download
         className="inline-block bg-green-600 text-white px-6 py-3 rounded-xl shadow hover:bg-green-700 transition"
       >
@@ -20,6 +20,7 @@ export default function ExtensionInstructions() {
         <ol className="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>{t("step_enable_dev_mode")}</li>
           <li>{t("step_go_to_extensions")}</li>
+          <li>{t("step_unzip")}</li>
           <li>{t("step_drag_crx")}</li>
           <li>{t("step_confirm_add")}</li>
         </ol>

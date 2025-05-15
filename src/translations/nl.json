@@ -13,6 +13,7 @@
     "install_browser_note": "Deze demo werkt momenteel alleen in Chrome, Edge en Brave.",
     "step_enable_dev_mode": "Open chrome://extensions en schakel 'Developer Mode' rechtsboven in.",
     "step_go_to_extensions": "Download het extensiebestand met de knop hierboven.",
+    "step_unzip": "Pak de gedownloade bestanden uit.",
     "step_drag_crx": "Sleep het bestand naar de extensiespagina.",
     "step_confirm_add": "Klik op 'Extensie toevoegen' om te bevestigen.",
     "note_other_browsers_title": "Gebruik je Firefox of Safari?",

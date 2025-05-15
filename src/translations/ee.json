@@ -13,6 +13,7 @@
     "install_browser_note": "See demo töötab praegu ainult Chrome’i, Edge’i ja Brave’i brauserites.",
     "step_enable_dev_mode": "Ava chrome://extensions ja lülita paremas ülanurgas sisse 'Arendajarežiim'.",
     "step_go_to_extensions": "Laadi laiendusfail alla ülaloleva nupuga.",
+    "step_unzip": "Unzip allalaaditud failid.", 
     "step_drag_crx": "Lohista fail laienduste lehele.",
     "step_confirm_add": "Kinnita paigaldus, vajutades 'Lisa laiendus'.",
     "note_other_browsers_title": "Kasutad Firefoxi või Safarit?",
