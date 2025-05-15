@@ -11,28 +11,45 @@ export default function Header() {
   const t = useTranslations("header");
   const { theme, setTheme } = useTheme();
 
+  const langs = ["en", "nl", "ee"];
+  const themes: ("light" | "dark" | "system")[] = ["light", "dark", "system"];
+
   return (
-    <header className="p-4 flex justify-between items-center bg-white dark:bg-gray-800">
+    <header className="p-4 flex justify-between items-center bg-white dark:bg-gray-800 shadow">
       <h1 className="text-xl font-bold dark:text-white">{t("title")}</h1>
-      <div className="flex items-center gap-4">
-        <select
-          value={lang}
-          onChange={(e) => setLang(e.target.value)}
-          className="p-1 rounded"
-        >
-          <option value="en">EN</option>
-          <option value="nl">NL</option>
-          <option value="ee">EE</option>
-        </select>
-        <select
-          value={theme}
-          onChange={(e) => setTheme(e.target.value as 'system' | 'light' | 'dark')}
-          className="p-1 rounded"
-        >
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
+      <div className="flex items-center gap-6">
+
+        <div className="flex bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden border border-gray-300 dark:border-gray-600">
+          {langs.map((l) => (
+            <button
+              key={l}
+              onClick={() => setLang(l)}
+              className={`px-3 py-1 text-sm font-medium transition ${
+                lang === l
+                  ? "bg-blue-600 text-white"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-600"
+              }`}
+            >
+              {l.toUpperCase()}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden border border-gray-300 dark:border-gray-600">
+          {themes.map((t) => (
+            <button
+              key={t}
+              onClick={() => setTheme(t)}
+              className={`px-3 py-1 text-sm font-medium capitalize transition ${
+                theme === t
+                  ? "bg-blue-600 text-white"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-600"
+              }`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
       </div>
     </header>
   );
