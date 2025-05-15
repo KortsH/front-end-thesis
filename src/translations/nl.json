@@ -7,7 +7,18 @@
   "home": {
     "title": "Toegestane Sociale Media Blockchain",
     "description": "Een proof-of-concept blockchain om posts op te slaan. Bekijk blokken, controleer integriteit en onderzoek data.",
-    "view_chain": "🚀 Bekijk de Blockchain"
+    "view_chain": "🚀 Bekijk de Blockchain",
+    "download_extension": "Download Chrome-extensie",
+    "install_title": "Hoe te installeren",
+    "install_browser_note": "Deze demo werkt momenteel alleen in Chrome, Edge en Brave.",
+    "step_enable_dev_mode": "Open chrome://extensions en schakel 'Developer Mode' rechtsboven in.",
+    "step_go_to_extensions": "Download het extensiebestand met de knop hierboven.",
+    "step_drag_crx": "Sleep het bestand naar de extensiespagina.",
+    "step_confirm_add": "Klik op 'Extensie toevoegen' om te bevestigen.",
+    "note_other_browsers_title": "Gebruik je Firefox of Safari?",
+    "note_other_browsers_desc": "Deze demo werkt alleen in Chromium-gebaseerde browsers. Neem contact op met de ontwikkelaar voor andere platforms.",
+    "screenshots_coming_soon": "Schermafbeeldingen binnenkort beschikbaar...",
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
   },
   "blockchain": {
     "title": "Blockchain Verkenner",

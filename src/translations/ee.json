@@ -7,7 +7,18 @@
   "home": {
     "title": "Lubatud Sotsiaalmeedia Plokiahel",
     "description": "Tõestuskontseptsioon postituste salvestamiseks plokiahelasse. Vaata plokke, kontrolli terviklikkust ja uuri andmeid.",
-    "view_chain": "🚀 Vaata Plokiahelat"
+    "view_chain": "🚀 Vaata Plokiahelat",
+    "download_extension": "Laadi alla Chrome’i laiendus",
+    "install_title": "Paigaldusjuhend",
+    "install_browser_note": "See demo töötab praegu ainult Chrome’i, Edge’i ja Brave’i brauserites.",
+    "step_enable_dev_mode": "Ava chrome://extensions ja lülita paremas ülanurgas sisse 'Arendajarežiim'.",
+    "step_go_to_extensions": "Laadi laiendusfail alla ülaloleva nupuga.",
+    "step_drag_crx": "Lohista fail laienduste lehele.",
+    "step_confirm_add": "Kinnita paigaldus, vajutades 'Lisa laiendus'.",
+    "note_other_browsers_title": "Kasutad Firefoxi või Safarit?",
+    "note_other_browsers_desc": "See demo töötab ainult Chromiumil põhinevates brauserites. Muude platvormide jaoks võta ühendust arendajaga.",
+    "screenshots_coming_soon": "Ekraanipildid varsti saadaval...",
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
   },
   "blockchain": {
     "title": "Plokiahela Uurija",

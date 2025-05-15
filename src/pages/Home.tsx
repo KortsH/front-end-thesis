@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Header from '../components/Header.tsx'
 import { useTranslations } from '../contexts/TranslationContext.tsx';
+import ExtensionInstructions from "../components/ExtensionInstructions.tsx";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -22,10 +23,12 @@ export default function Home() {
               {t("view_chain")}
             </Link>
           </div>
+
+          <ExtensionInstructions />
         </main>
 
         <footer className="bg-gray-100 dark:bg-gray-800 text-center py-4">
-          <small className="text-gray-500 dark:text-gray-400">Your University • Year 3 Thesis</small>
+          <small className="text-gray-500 dark:text-gray-400">{t("footer_credit")}</small>
         </footer>
       </div>
     </div>
