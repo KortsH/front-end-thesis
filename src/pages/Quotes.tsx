@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { useTranslations } from '../contexts/TranslationContext.tsx'
 import { motion, AnimatePresence } from 'framer-motion'
 import Header from '../components/Header.tsx'
+import Footer from '../components/Footer.tsx'
 
 import type { Quote } from '../types/Quote.ts'
-
 import { getQuotes } from '../utils/api.ts'
 
 export default function Quotes() {
@@ -31,9 +31,10 @@ export default function Quotes() {
   })
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Header />
-      <div className="min-h-screen py-12 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+
+      <div className="flex-grow py-12">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-extrabold mb-8 text-center">
             {t('quotes_title')}
@@ -91,6 +92,8 @@ export default function Quotes() {
           )}
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
