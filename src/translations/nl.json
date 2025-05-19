@@ -19,7 +19,6 @@
     "note_other_browsers_title": "Gebruik je Firefox of Safari?",
     "note_other_browsers_desc": "Deze demo werkt alleen in Chromium-gebaseerde browsers. Neem contact op met de ontwikkelaar voor andere platforms.",
     "screenshots_coming_soon": "Schermafbeeldingen binnenkort beschikbaar...",
-    "footer_credit": "Vrije Universiteit • Henri Korts • 2025",
     "view_quotes": "🔍 Bekijk Citaten",
     "try_demo": "Probeer de Demo"
   },
@@ -44,5 +43,8 @@
     "instructions_step1": "Installeer de Chrome-extensie via de link in de header.",
     "instructions_step2": "Scrol door de tweets en citaten hierboven.",
     "instructions_step3": "Klik op 'Verifieer op Blockchain' om bewijs te zien."
+  },
+  "footer": {
+    "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
   }
 }
