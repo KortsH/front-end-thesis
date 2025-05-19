@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/Header.tsx'
 import { useTranslations } from '../contexts/TranslationContext.tsx';
 import ExtensionInstructions from "../components/ExtensionInstructions.tsx";
+import DemoPage from "./DemoPage.tsx";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -29,6 +30,13 @@ export default function Home() {
               >
                 {t("view_quotes")}
               </Link>
+
+            <Link
+              to="/demo"
+              className="inline-block bg-green-600 text-white px-6 py-3 rounded-xl shadow hover:bg-green-700 transition"
+              >
+              {t("try_demo")}
+            </Link>
           </div>
 
           <ExtensionInstructions />

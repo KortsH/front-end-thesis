@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Blockchain from "./pages/Blockchain.tsx";
 import Quotes from "./pages/Quotes.tsx";
+import DemoPage from "./pages/DemoPage.tsx";
 
 import { TranslationProvider } from "./contexts/TranslationContext.tsx";
 import { ThemeProvider } from "./contexts/ThemeContext.tsx";
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/chain" element={<Blockchain />} />
           <Route path="/quotes" element={<Quotes />} />
+          <Route path="/demo" element={<DemoPage />} />
         </Routes>
       </ThemeProvider>
     </TranslationProvider>

@@ -20,7 +20,8 @@
     "note_other_browsers_desc": "This demo only works on Chromium-based browsers. For other platforms, contact the developer.",
     "screenshots_coming_soon": "Screenshots coming soon...",
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025",
-    "view_quotes": "🔍 View Quotes"
+    "view_quotes": "🔍 View Quotes",
+    "try_demo": "Try the Demo"
   },
   "blockchain": {
     "title": "Blockchain Explorer",
@@ -33,5 +34,15 @@
     "filter_all": "All authors",
     "loading": "Loading quotes…",
     "no_results": "No quotes found."
-  }
+  },
+  "demo": {
+    "demo_title": "Interactive Demo",
+    "section_tweets": "Embedded Tweets",
+    "section_quotes": "On-Chain Quotes",
+    "section_news": "News Stories",
+    "instructions_title": "How This Demo Works",
+    "instructions_step1": "Make sure to install the Chrome extention",
+    "instructions_step2": "Scroll through tweets and quotes above.",
+    "instructions_step3": "Click 'Verify on Blockchain' to see proof."
+  }    
 }
