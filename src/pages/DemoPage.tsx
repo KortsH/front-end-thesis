@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
-import { useTranslations } from '../contexts/TranslationContext.tsx'
 import Header from '../components/Header.tsx'
 import DemoInstructions from '../components/DemoInstructions.tsx'
 import EmbeddedTweets from '../components/EmbeddedTweets.tsx'
 import TwitterLink from '../components/TwitterLink.tsx'
+import ObamaQuoteDemo from '../components/DemoNewsStory.tsx'
 
 import Footer from '../components/Footer.tsx'
 
@@ -16,6 +15,9 @@ export default function DemoPage() {
       <DemoInstructions />
       <TwitterLink />
       <EmbeddedTweets />
+      <div className="flex-grow mx-20 mb-10 rounded">
+        <ObamaQuoteDemo />
+      </div>
 
       <Footer />
     </div>

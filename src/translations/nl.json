@@ -45,7 +45,9 @@
     "instructions_step3": "Klik op 'Verifieer op Blockchain' om bewijs te zien.",
     "section_twitter": "Probeer het live!",
     "section_twitter_description": "Klik op de onderstaande knop om mijn testaccount op X te openen en de extensie in actie te zien.",
-    "tweet_button": "Naar X!"
+    "tweet_button": "Naar X!",
+    "section_obama_title": "Obama Citaten",
+    "section_obama_description": "Deze sectie bevat citaten van Barack Obama. Selecteer de tekst en gebruik de sneltoets CTRL + M (werkt nog niet) om het citaat te verifiëren!"
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"

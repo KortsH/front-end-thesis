@@ -45,7 +45,9 @@
     "instructions_step3": "Klõpsake tõendamiseks 'Verifitseeri plokiahelas'.",
     "section_twitter": "Proovi reaalajas!",
     "section_twitter_description": "Klõpsa alloleval nupul, et avada minu testkonto platvormil X ja näha laiendit toimimas.",
-    "tweet_button": "Twitterisse!"
+    "tweet_button": "Twitterisse!",
+    "section_obama_title": "Obama Tsitaadid",
+    "section_obama_description": "See sektsioon sisaldab tsitaate Barack Obamalt. Aktiveerige text ja kasutage klahvikombinatsiooni CTRL + M (veel ei tööta), et verifitseerida tsitaat!."
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"

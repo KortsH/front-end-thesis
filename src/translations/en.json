@@ -46,7 +46,9 @@
     "instructions_step3": "Click 'Verify on Blockchain' to see proof.",
     "section_twitter": "Try it live!",
     "section_twitter_description": "Click the button below to open my testing account on X and see the extension in action.",
-    "tweet_button": "To X!"
+    "tweet_button": "To X!",
+    "section_obama_title": "Obama Quotes",
+    "section_obama_description": "This section contains quotes from Barack Obama. Highlight the text and use the keybind CTRL + M (doesn't work yet) to verify the quote!."
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
