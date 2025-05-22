@@ -1,13 +1,21 @@
+import { useEffect, useState } from 'react'
 import TweetEmbed from '../components/Tweet.tsx' 
 import tweetIds from '../assets/demoTweets.json'
 import { useTranslations } from '../contexts/TranslationContext.tsx'
 
-interface EmbeddedTweetsProps {
-  hydrated: boolean
-}
-
-export default function EmbeddedTweets(hydrated: EmbeddedTweetsProps) {
+export default function EmbeddedTweets() {
   const t = useTranslations('demo');
+    const [hydrated, setHydrated] = useState(false)
+  
+    useEffect(() => {
+      setHydrated(true)
+      if (!window.twttr) {
+        const s = document.createElement('script')
+        s.src = 'https://platform.twitter.com/widgets.js'
+        s.async = true
+        document.body.appendChild(s)
+      }
+    }, [])
   
   return (
     <section className="flex-grow px-6 py-8">

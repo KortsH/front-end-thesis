@@ -8,25 +8,14 @@ import TwitterLink from '../components/TwitterLink.tsx'
 import Footer from '../components/Footer.tsx'
 
 export default function DemoPage() {
-  const t = useTranslations('demo')
-  const [hydrated, setHydrated] = useState(false)
-
-  useEffect(() => {
-    setHydrated(true)
-    if (!window.twttr) {
-      const s = document.createElement('script')
-      s.src = 'https://platform.twitter.com/widgets.js'
-      s.async = true
-      document.body.appendChild(s)
-    }
-  }, [])
+  // const t = useTranslations('demo')
 
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Header />
       <DemoInstructions />
       <TwitterLink />
-      <EmbeddedTweets hydrated={hydrated} />
+      <EmbeddedTweets />
 
       <Footer />
     </div>
