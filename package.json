@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/next": "^9.0.0",
     "@types/react-router-dom": "^5.3.3",
+    "crypto-js": "^4.2.0",
     "framer-motion": "^12.11.4",
     "next": "^15.3.2",
     "react": "^19.1.0",

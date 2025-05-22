@@ -57,6 +57,17 @@
   font-size: 0.75rem;
 }
 
+#quote {
+  width: 83% !important;
+  height: 2rem !important;
+}
+
+#quote-dropdown { 
+  width: 100% !important;
+  font-size: 0.6rem !important;
+  color: black !important;
+}
+
 .block-reveal {
   position: absolute;
   top: 100%;

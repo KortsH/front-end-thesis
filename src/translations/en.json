@@ -32,7 +32,8 @@
     "search_placeholder": "Search quotes...",
     "filter_all": "All authors",
     "loading": "Loading quotes…",
-    "no_results": "No quotes found."
+    "no_results": "No quotes found.",
+    "commitment_hash": "Commitment Hash:" 
   },
   "demo": {
     "demo_title": "Interactive Demo",
