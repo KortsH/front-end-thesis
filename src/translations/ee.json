@@ -36,13 +36,16 @@
   }, 
   "demo": {
     "demo_title": "Interaktiivne Demo",
-    "section_tweets": "Manustatud säutsud",
+    "section_tweets": "Säutsud",
     "section_quotes": "Plokiahelaksite tsitaadid",
     "section_news": "Uudislood",
     "instructions_title": "Kuidas see demo töötab",
     "instructions_step1": "Installi Chrome’i rakendus",
     "instructions_step2": "Kerige ülaltoodud säutsude ja tsitaatide vahel.",
-    "instructions_step3": "Klõpsake tõendamiseks 'Verifitseeri plokiahelas'."
+    "instructions_step3": "Klõpsake tõendamiseks 'Verifitseeri plokiahelas'.",
+    "section_twitter": "Proovi reaalajas!",
+    "section_twitter_description": "Klõpsa alloleval nupul, et avada minu testkonto platvormil X ja näha laiendit toimimas.",
+    "tweet_button": "Twitterisse!"
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"

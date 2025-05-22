@@ -42,7 +42,10 @@
     "instructions_title": "Hoe deze demo werkt",
     "instructions_step1": "Installeer de Chrome-extensie via de link in de header.",
     "instructions_step2": "Scrol door de tweets en citaten hierboven.",
-    "instructions_step3": "Klik op 'Verifieer op Blockchain' om bewijs te zien."
+    "instructions_step3": "Klik op 'Verifieer op Blockchain' om bewijs te zien.",
+    "section_twitter": "Probeer het live!",
+    "section_twitter_description": "Klik op de onderstaande knop om mijn testaccount op X te openen en de extensie in actie te zien.",
+    "tweet_button": "Naar X!"
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"

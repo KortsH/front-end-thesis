@@ -42,7 +42,10 @@
     "instructions_title": "How This Demo Works",
     "instructions_step1": "Make sure to install the Chrome extention",
     "instructions_step2": "Scroll through tweets and quotes above.",
-    "instructions_step3": "Click 'Verify on Blockchain' to see proof."
+    "instructions_step3": "Click 'Verify on Blockchain' to see proof.",
+    "section_twitter": "Try it live!",
+    "section_twitter_description": "Click the button below to open my testing account on X and see the extension in action.",
+    "tweet_button": "To X!"
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
