@@ -3,6 +3,7 @@ import Header from '../components/Header.tsx'
 import { useTranslations } from '../contexts/TranslationContext.tsx';
 import ExtensionInstructions from "../components/ExtensionInstructions.tsx";
 import Footer from '../components/Footer.tsx';
+import LinkButton from '../components/LinkButton.tsx';
 
 export default function Home() {
   const t = useTranslations("home");
@@ -17,26 +18,17 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
               {t("description")}
             </p>
-            <Link
-              to="/chain"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
-            >
+            <LinkButton to="/chain" className="bg-blue-600 hover:bg-blue-700">
               {t("view_chain")}
-            </Link>
+            </LinkButton>
 
-            <Link
-                to="/quotes"
-                className="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl shadow hover:bg-purple-700 transition"
-              >
-                {t("view_quotes")}
-              </Link>
+            <LinkButton to="/quotes" className="bg-purple-600 hover:bg-purple-700">
+              {t("view_quotes")}
+            </LinkButton>
 
-            <Link
-              to="/demo"
-              className="inline-block bg-green-600 text-white px-6 py-3 rounded-xl shadow hover:bg-green-700 transition"
-              >
+            <LinkButton to="/demo" className="bg-green-600 hover:bg-green-700">
               {t("try_demo")}
-            </Link>
+            </LinkButton>
           </div>
 
           <ExtensionInstructions />
