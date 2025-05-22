@@ -24,7 +24,7 @@ export async function getHashedQuotes(
   if (search)  params.append("search", search);
   if (author)  params.append("author", author);
   const url =
-    `${HASHED_API}/api/quotes${params.toString() ? `?${params}` : ""}`;
+    `${HASHED_API}/quotes${params.toString() ? `?${params}` : ""}`;
   const res = await fetch(url, {
     headers: { Accept: "application/json" },
   });

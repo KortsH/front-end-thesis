@@ -3,12 +3,14 @@ import { useTranslations } from '../contexts/TranslationContext.tsx'
 import { motion, AnimatePresence } from 'framer-motion'
 import Header from '../components/Header.tsx'
 import Footer from '../components/Footer.tsx'
+import SliderButtonGroup from '../components/SliderButton.tsx'
 
 import type { Quote } from '../types/Quote.ts'
-import { getQuotes } from '../utils/api.ts'
+import { getQuotes, getHashedQuotes } from '../utils/api.ts'
 
 export default function Quotes() {
   const t = useTranslations('quotes')
+  const [chainType, setChainType] = useState("raw");
   const [quotes, setQuotes] = useState<Quote[]>([])
   const [search, setSearch] = useState('')
   const [filterAuthor, setFilterAuthor] = useState('')
@@ -16,11 +18,22 @@ export default function Quotes() {
 
   useEffect(() => {
     setLoading(true)
-    getQuotes(search, filterAuthor)
+    setQuotes([])
+
+    if (chainType === "raw") {
+      getQuotes(search, filterAuthor)
       .then(data => setQuotes(data))
       .catch(err => console.error('Error fetching quotes:', err))
       .finally(() => setLoading(false))
-  }, [search, filterAuthor])
+    }
+
+    if (chainType === "hashed") {
+      getHashedQuotes(search, filterAuthor)
+      .then(data => setQuotes(data))
+      .catch(err => console.error('Error fetching quotes:', err))
+      .finally(() => setLoading(false))
+    }
+  }, [search, filterAuthor, chainType])
 
   const authors = Array.from(new Set(quotes.map(q => q.poster)))
 
@@ -33,6 +46,14 @@ export default function Quotes() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Header />
+
+      <SliderButtonGroup
+        options={["raw", "hashed"]}
+        value={chainType}
+        onChange={setChainType}
+        capitalize={false}
+        className="mt-4 bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600 inline-flex justify-center"
+      />
 
       <div className="flex-grow py-12">
         <div className="container mx-auto px-6">
