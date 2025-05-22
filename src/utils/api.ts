@@ -42,14 +42,15 @@ export async function getHashedQuotes(
       (b: any) => b.data.recordId === q.id && b.data.commitment === commitment
     );
   
-    return {
+  return {
       ...q,
       commitment,
       proof: proofBlock || null,
       isOnChain: !!proofBlock,
     };
-  }
-)}
+  });
+  return enriched;
+}
 
 export async function getChain() {
   const res = await fetch(`${API}/chain`);

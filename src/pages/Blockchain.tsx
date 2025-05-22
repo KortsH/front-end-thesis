@@ -54,7 +54,7 @@ export default function Blockchain() {
         />
       </section>
   
-      <div className="blockchain-container flex-grow">
+      <div className="blockchain-container flex-grow mx-16 mb-10 rounded">
         {chain.map((block) => (
           <BlockItem key={block.index} block={block} />
         ))}
