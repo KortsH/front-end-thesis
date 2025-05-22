@@ -4,7 +4,7 @@ export default function ExtensionInstructions() {
   const t = useTranslations("home");
 
   return (
-    <div className="mt-12 space-y-8">
+    <div className="mt-1 space-y-8">
       <a
         href={`${process.env.PUBLIC_URL}/chrome_extention.zip`}
         download
