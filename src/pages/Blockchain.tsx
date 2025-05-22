@@ -4,7 +4,7 @@ import Header from "../components/Header.tsx";
 import { BlockItem } from "../components/BlockItem.tsx";
 import { useTranslations } from "../contexts/TranslationContext.tsx";
 import Footer from "../components/Footer.tsx";
-import SliderButtonGroup from "../components/SliderButton.tsx";
+import SliderButton from "../components/SliderButton.tsx";
 
 interface Block {
   index: number;
@@ -45,7 +45,7 @@ export default function Blockchain() {
         <p className="mt-2 text-sm italic text-gray-500 dark:text-gray-400">
           {t("connected")}
         </p>
-        <SliderButtonGroup
+        <SliderButton
           options={["raw", "hashed"]}
           value={chainType}
           onChange={setChainType}

@@ -1,4 +1,4 @@
-interface SliderButtonGroupProps<T extends string> {
+interface SliderButtonProps<T extends string> {
   options: T[];
   value: T;
   onChange: (value: T) => void;
@@ -6,13 +6,13 @@ interface SliderButtonGroupProps<T extends string> {
   capitalize?: boolean;
 }
 
-export default function SliderButtonGroup<T extends string>({
+export default function SliderButton<T extends string>({
   options,
   value,
   onChange,
   className = "",
   capitalize = false,
-}: SliderButtonGroupProps<T>) {
+}: SliderButtonProps<T>) {
   return (
     <div className={`flex rounded-full overflow-hidden border transition ${className}`}>
       {options.map((opt) => (
