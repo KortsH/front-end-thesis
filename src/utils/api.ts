@@ -5,6 +5,30 @@ import hexEnc  from "crypto-js/enc-hex";
 const API = process.env.REACT_APP_API_BASE_URL as string;
 const DATABASE_API = process.env.REACT_APP_API_DATABASE_URL as string;
 const HASHED_API = process.env.REACT_APP_API_HASHED_URL as string;
+const MERKLE_API = process.env.REACT_APP_API_MERKLE_URL as string;
+
+export async function getMerkleChain() {
+  const res = await fetch(`${MERKLE_API}/chain`);
+  if (!res.ok) {
+    throw new Error("Network error: " + res.statusText);
+  }
+  const data = await res.json();
+
+  if (Array.isArray(data)) return data;
+  if (Array.isArray(data.chain)) return data.chain;
+  return [];
+}
+
+export async function getMerklePending() {
+  const res = await fetch(`${MERKLE_API}/pending`);
+  if (!res.ok) {
+    throw new Error("Network error: " + res.statusText);
+  }
+  const data = await res.json();
+  if (Array.isArray(data)) return data;
+  if (Array.isArray(data.pending)) return data.pending;
+  return [];
+}
 
 export async function getHashedChain() {
   const res = await fetch(`${HASHED_API}/chain`);
@@ -12,7 +36,6 @@ export async function getHashedChain() {
     throw new Error("Network error: " + res.statusText);
   }
   const data = await res.json();
-  console.log("getHashedChain → data:", data);
   if (Array.isArray(data)) return data;
   if (Array.isArray(data.chain)) return data.chain;
   return [];

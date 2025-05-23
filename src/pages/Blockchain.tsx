@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getChain, getHashedChain } from "../utils/api.ts";
+import { getChain, getHashedChain, getMerkleChain, getMerklePending } from "../utils/api.ts";
 import Header from "../components/Header.tsx";
 import { BlockItem } from "../components/BlockItem.tsx";
 import { useTranslations } from "../contexts/TranslationContext.tsx";
@@ -15,20 +15,36 @@ interface Block {
   nonce: number;
 }
 
+interface PendingBlock {
+  recordId: string;
+  commitment: string;
+}
+
 export default function Blockchain() {
-  const [chainType, setChainType] = useState("raw");
+  const [chainType, setChainType] = useState("merkle");
   const [chain, setChain] = useState<Block[]>([]);
+  const [pending, setPending] = useState<PendingBlock[]>([]);
   const t = useTranslations("blockchain");
 
   useEffect(() => {
     if (chainType === "raw") {
       setChain([]);
       getChain().then(setChain).catch(console.error);
+      return;
     }
 
     if (chainType === "hashed") {
       setChain([]);
       getHashedChain().then(setChain).catch(console.error);
+      return;
+    }
+
+    if (chainType === "merkle") {
+      setChain([]);
+      getMerkleChain().then(setChain).catch(console.error);
+      setPending([]);
+      getMerklePending().then(setPending).catch(console.error);
+      return;
     }
 
   }, [chainType]);
@@ -46,7 +62,7 @@ export default function Blockchain() {
           {t("connected")}
         </p>
         <SliderButton
-          options={["raw", "hashed"]}
+          options={["raw", "hashed", "merkle"]}
           value={chainType}
           onChange={setChainType}
           capitalize={false}
@@ -60,6 +76,16 @@ export default function Blockchain() {
         ))}
       </div>
   
+      <h1 className="text-4xl font-extrabold mb-4 text-center">
+        {t("pending")}
+      </h1> 
+      <div className="blockchain-container flex-grow mx-20 mb-10 rounded">
+          {pending.map((block) => (
+            <BlockItem key={block.recordId} block={block} />
+          ))}
+      </div>
+
+
       <Footer />
     </div>
   );
