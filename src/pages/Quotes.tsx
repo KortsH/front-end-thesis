@@ -14,7 +14,6 @@ export default function Quotes() {
   const [filterAuthor, setFilterAuthor] = useState("");
   const [chain, setChain] = useState<"hashed" | "merkle">("hashed");
 
-  // Derive filtered list locally for UI purposes
   const authors = Array.from(new Set(quotes.map((q) => q.poster)));
   const filtered = quotes.filter(
     (q) =>
@@ -25,23 +24,21 @@ export default function Quotes() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Header />
-      <div className="flex-grow py-12">
+      <div className="flex-grow mt-6">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-extrabold mb-8 text-center">
+          <h1 className="text-4xl font-extrabold mb-4 text-center">
             {t("quotes_title")}
           </h1>
 
-          <SliderButton
-            options={["hashed", "merkle"]}
-            value={chain}
-            onChange={setChain}
-            className="bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600"
-            capitalize={false}
-          />
-
-          <p className="mb-2 text-center text-gray-500 dark:text-gray-400 mt-4">
-            Showing the blockchain database: ✔ means verified, ✖ means not. Hover over the commitment hash to inspect its data.
-          </p>
+          <div className="flex justify-center">
+            <SliderButton
+              options={["hashed", "merkle"]}
+              value={chain}
+              onChange={setChain}
+              className="bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600 mb-4"
+              capitalize={false}
+            />
+          </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between mb-8 space-y-4 md:space-y-0">
             <input
