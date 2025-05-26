@@ -2,7 +2,11 @@
   "header": {
     "title": "Plokiahela Uurija",
     "view_chain": "Vaata plokiahelat",
-    "language": "Keel"
+    "language": "Keel",
+    "home": "Avaleht",
+    "blockchain": "Plokiahel",
+    "quotes": "Tsitaadid",
+    "demo": "Demo"
   },
   "home": {
     "title": "Lubatud Sotsiaalmeedia Plokiahel",

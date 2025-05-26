@@ -10,7 +10,7 @@ export default function DemoInstructions() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
     >
-      <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t('instructions_title')}</h3>
+      <h3 className="text-2xl font-semibold mb-4 dark:text-white mt-16">{t('instructions_title')}</h3>
       <ul className="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300">
         <li>{t('instructions_step1')}</li>
         <li>{t('instructions_step2')}</li>

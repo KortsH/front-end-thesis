@@ -2,7 +2,11 @@
   "header": {
     "title": "Blockchain Explorer",
     "view_chain": "Bekijk blockchain",
-    "language": "Taal"
+    "language": "Taal",
+    "home": "Home",
+    "blockchain": "Blockchain",
+    "quotes": "Citaten",
+    "demo": "Demo"
   },
   "home": {
     "title": "Toegestane Sociale Media Blockchain",

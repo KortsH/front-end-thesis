@@ -24,7 +24,7 @@ export default function Quotes() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Header />
-      <div className="flex-grow mt-6">
+      <div className="flex-grow mt-20">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-extrabold mb-4 text-center">
             {t("quotes_title")}

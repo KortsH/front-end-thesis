@@ -50,7 +50,7 @@ export default function Blockchain() {
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
       <Header />
 
-      <section className="py-8 px-6 text-center">
+      <section className="py-8 px-6 text-center mt-20">
         <h1 className="text-4xl font-extrabold mb-4">{t("title")}</h1>
         <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
           {t("description")}

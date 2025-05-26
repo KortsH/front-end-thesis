@@ -2,7 +2,11 @@
   "header": {
     "title": "Blockchain Explorer",
     "view_chain": "View Blockchain",
-    "language": "Language"
+    "language": "Language",
+    "home": "Home",
+    "blockchain": "Blockchain",
+    "quotes": "Quotes",
+    "demo": "Demo"
   },
   "home": {
     "title": "Permissioned Social-Media Chain",
