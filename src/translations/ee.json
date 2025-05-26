@@ -51,5 +51,27 @@
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+  },
+  "explanation": {
+    "title": "Millest see sait räägib?",
+    "intro": "Digimaailmas, kus eksitav info ja tsitaatide väärkasutamine levivad kiiresti, pakub see demo krüptograafilist süsteemi sotsiaalmeedia tsitaatide ehtsuse kontrollimiseks, isegi kui need on hiljem kustutatud, muudetud või ümber sõnastatud.",
+    "quote": "“Mida öeldi, saab tõendada. Mida mõeldi, jääb sinu otsustada.”",
+    "why_title": "🔍 Miks see oluline on",
+    "why_content": "Sotsiaalmeedia sisu võib kujundada avalikku arvamust. Kuid postitusi saab muuta või kustutada, tsitaate kontekstist välja rebida. Ekraanipildid võivad olla võltsitud, plokiahela krüptotõendid mitte.",
+    "what_title": "🛠️ Mida siin teha saab",
+    "what_1": "Testi tsitaatide ehtsust sisseehitatud tweetide, Twitteri või toorteksti kaudu.",
+    "what_2": "Vaata plokiahela vaatajat, et uurida krüptograafilisi tõendeid.",
+    "what_3": "Sirvi meie andmebaasi salvestatud postituste ja ajatemplitega.",
+    "how_title": "🔗 Kuidas see töötab (lühiülevaade)",
+    "how_1": "Süsteem salvestab jälgitavatelt kontodelt säutse, räsi nende sisu SHA-256 abil, grupeerib need Merkle’i puudeks ja kinnitab need permissioned-plokiahelasse.",
+    "how_2": "Kui kontrollid tsitaati, otsib süsteem vastet salvestatud andmetes ja tagastab krüptograafilise tulemuse reaalajas.",
+    "tech_title": "📦 Kasutatud tehnoloogiad",
+    "tech_1": "Krüptograafiline räsi (SHA-256)",
+    "tech_2": "Merkle puud partii-tõendite jaoks",
+    "tech_3": "Plokiahela ajalised tõendid",
+    "tech_4": "Semantiline tsitaatide sobitamine",
+    "tech_5": "Kliendipoolne Chrome'i laiendus",
+    "prototype_title": "🧪 Tööprototüüp pärisprobleemi jaoks",
+    "prototype_content": "See demo on osa VU Amsterdami bakalaureusetööst, mis uurib platvormist sõltumatut, krüptograafiliselt kontrollitavat tsitaatide verifitseerimissüsteemi."
   }
 }

@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
 import Header from '../components/Header.tsx'
 import { useTranslations } from '../contexts/TranslationContext.tsx';
 import ExtensionInstructions from "../components/ExtensionInstructions.tsx";
 import Footer from '../components/Footer.tsx';
 import LinkButton from '../components/LinkButton.tsx';
+import Explanation from '../components/Explanation.tsx';
 
 export default function Home() {
   const t = useTranslations("home");
@@ -41,6 +41,10 @@ export default function Home() {
           >
             ▶️ {t("try_demo")}
           </LinkButton>
+        </div>
+
+        <div className="mt-12 w-full max-w-4xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 shadow-lg transition-transform transform hover:scale-[1.01]">
+          <Explanation />
         </div>
 
         <div className="mt-12 w-full max-w-2xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 shadow-lg transition-transform transform hover:scale-[1.01] text-gray-900 dark:text-gray-100">

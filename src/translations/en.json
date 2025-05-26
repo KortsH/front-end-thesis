@@ -52,5 +52,27 @@
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+  },
+  "explanation": {
+    "title": "What is this site about?",
+    "intro": "In a digital world filled with misinformation, quote manipulation, and disappearing content, this demo showcases a cryptographic system designed to verify the authenticity of quoted social media posts, even if they've been deleted, altered, or paraphrased.",
+    "quote": "“What was said can be proven. What was meant, we leave to you.”",
+    "why_title": "🔍 Why this matters",
+    "why_content": "Whether it’s a political statement, journalistic quote, or viral meme, social media content can shape public discourse. However, social media posts can be edited or deleted, and quotes misrepresented. Screenshots can be faked, but cryptographic commitments on a blockchain cannot.",
+    "what_title": "🛠️ What you can do here",
+    "what_1": "Use the Quote Verifier demo to test quote authenticity from embedded tweets, Twitter itself, or even raw text.",
+    "what_2": "Browse blockchain viewers to inspect the underlying cryptographic commitments.",
+    "what_3": "Search our public database of captured social media posts with verifiable timestamps.",
+    "how_title": "🔗 How it works (in brief)",
+    "how_1": "Our system captures tweets from tracked accounts, hashes the content using SHA-256, groups them into Merkle trees, and commits the root on a permissioned blockchain.",
+    "how_2": "When you verify a quote, the system checks whether it matches a committed post, either exactly or semantically, and returns a verifiable result in real time.",
+    "tech_title": "📦 Technology Used",
+    "tech_1": "Cryptographic hashing (SHA-256)",
+    "tech_2": "Merkle trees for scalable batch commitments",
+    "tech_3": "Blockchain-based timestamping",
+    "tech_4": "Semantic matching for partial quotes",
+    "tech_5": "Client-side verifier (Chrome extension)",
+    "prototype_title": "🧪 A working prototype for a real-world problem",
+    "prototype_content": "This demo is part of a bachelor’s thesis at Vrije Universiteit Amsterdam. It explores a platform-independent, tamper-evident verification system for social media quotes, without relying on any single provider."
   }
 }

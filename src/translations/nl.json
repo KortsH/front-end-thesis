@@ -51,5 +51,27 @@
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
+  },
+  "explanation": {
+    "title": "Waar gaat deze site over?",
+    "intro": "In een digitale wereld vol misinformatie, citaatmanipulatie en verdwijnende inhoud, toont deze demo een cryptografisch systeem om de echtheid van socialemediacitaten te verifiëren, zelfs als ze verwijderd of gewijzigd zijn.",
+    "quote": "“Wat gezegd is, kunnen we bewijzen. Wat bedoeld werd, is aan jou.”",
+    "why_title": "🔍 Waarom dit ertoe doet",
+    "why_content": "Socialmediacontent beïnvloedt het publieke debat. Posts kunnen worden bewerkt of verwijderd, citaten uit context gehaald. Screenshots zijn makkelijk te vervalsen, blockchainbewijzen zijn dat niet.",
+    "what_title": "🛠️ Wat je hier kunt doen",
+    "what_1": "Gebruik de demo om citaten te verifiëren via ingebedde tweets, Twitter zelf of ruwe tekst.",
+    "what_2": "Bekijk blockchain viewers om de cryptografische bewijzen te inspecteren.",
+    "what_3": "Doorzoek onze database van vastgelegde posts met verifieerbare timestamps.",
+    "how_title": "🔗 Hoe het werkt (kort samengevat)",
+    "how_1": "Het systeem legt tweets vast van geselecteerde accounts, maakt hashes met SHA-256, groepeert ze in Merkle-bomen en commit die in een permissioned blockchain.",
+    "how_2": "Bij verificatie zoekt het systeem een match en toont een cryptografisch bewijs direct in je browser.",
+    "tech_title": "📦 Gebruikte technologieën",
+    "tech_1": "Cryptografische hashing (SHA-256)",
+    "tech_2": "Merkle-bomen voor batchverificatie",
+    "tech_3": "Blockchain-gebaseerde tijdstempels",
+    "tech_4": "Semantische overeenkomst van citaten",
+    "tech_5": "Client-side verificatie extensie (Chrome)",
+    "prototype_title": "🧪 Een werkend prototype voor een echt probleem",
+    "prototype_content": "Deze demo maakt deel uit van een bachelorproef aan de Vrije Universiteit Amsterdam en onderzoekt een platformonafhankelijk, cryptografisch verificatiesysteem voor socialmediacitaten."
   }
 }
