@@ -41,6 +41,13 @@ export default function Home() {
           >
             ▶️ {t("try_demo")}
           </LinkButton>
+
+          <LinkButton
+            to="/tracked-people"
+            className="bg-yellow-600 hover:bg-yellow-700 px-8 py-3 text-lg"
+          >
+            {t("view_tracked_people")}
+          </LinkButton>
         </div>
 
         <div className="mt-8 w-full max-w-2xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 shadow-lg transition-transform transform hover:scale-[1.01] text-gray-900 dark:text-gray-100">
