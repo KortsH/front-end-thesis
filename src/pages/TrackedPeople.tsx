@@ -20,7 +20,6 @@ export default function TrackedPeoplePage() {
     fetch('http://localhost:3001/tracked_people')
       .then(res => res.json())
       .then(data => {
-        console.log('Fetched tracked people:', data);
         const flatList: Person[] = [];
         Object.entries(data).forEach(([platform, value]) => {
           if (Array.isArray(value)) {
