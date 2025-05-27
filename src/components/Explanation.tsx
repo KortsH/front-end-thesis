@@ -53,9 +53,9 @@ const Explanation: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="max-w-4xl mx-auto px-6 py-12 text-base"
+      className="max-w-4xl mx-auto px-6 py-2 text-base"
     >
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900 dark:text-white">
         {t("title")}
       </h1>
       <p className="mb-10 text-gray-800 dark:text-gray-300 text-center">

@@ -4,7 +4,7 @@ export default function ExtensionInstructions() {
   const t = useTranslations("home");
 
   return (
-    <div className="mt-1 space-y-8">
+    <div className="space-y-2">
       <a
         href={`${process.env.PUBLIC_URL}/chrome_extention.zip`}
         download
@@ -13,7 +13,7 @@ export default function ExtensionInstructions() {
         {t("download_extension")}
       </a>
 
-      <div className="max-w-3xl mx-auto text-left bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl p-6 shadow-md space-y-4">
+      <div className="max-w-3xl mx-auto text-left bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl p-6 shadow-md space-y-2">
         <h3 className="text-2xl font-bold">{t("install_title")}</h3>
         <p>{t("install_browser_note")}</p>
 

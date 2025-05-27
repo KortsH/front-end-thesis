@@ -28,7 +28,7 @@ interface PendingBlock {
 }
 
 export default function Blockchain() {
-  const [chainType, setChainType] = useState("merkle");
+  const [chainType, setChainType] = useState("raw");
   const [chain, setChain] = useState<Block[]>([]);
   const [pending, setPending] = useState<PendingBlock[]>([]);
   const t = useTranslations("blockchain");
@@ -77,7 +77,7 @@ export default function Blockchain() {
                 initialIndex={block.index}
               />
             )
-            : <BlockItem      key={block.index} block={block} />
+            : <BlockItem key={block.index} block={block} />
         )}
       </div>
 
