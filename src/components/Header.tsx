@@ -24,6 +24,7 @@ export default function Header() {
     { name: t("demo"), to: "/demo" },
     { name: t("quotes"), to: "/quotes" },
     { name: t("blockchain"), to: "/chain" },
+    { name: t("tracked_people"), to: "/tracked-people" },
   ];
 
   const [isVisible, setIsVisible] = useState(true);
