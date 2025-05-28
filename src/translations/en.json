@@ -52,7 +52,7 @@
     "section_twitter_description": "Click the button below to open my testing account on X and see the extension in action.",
     "tweet_button": "To X!",
     "section_obama_title": "Obama Quotes",
-    "section_obama_description": "This section contains quotes from Barack Obama. Highlight the text and use the keybind CTRL + M (doesn't work yet) to verify the quote!."
+    "section_obama_description": "This section contains quotes from Barack Obama. Highlight the text and use the keybind ALT + H (doesn't work yet) to verify the quote!."
   },
   "footer": {
     "footer_credit": "Vrije Universiteit • Henri Korts • 2025"
