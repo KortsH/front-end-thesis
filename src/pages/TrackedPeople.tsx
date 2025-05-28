@@ -1,4 +1,3 @@
-/* File: src/pages/tracked-people.tsx */
 import { useState, useEffect } from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
