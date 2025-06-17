@@ -34,52 +34,54 @@ export default function TweetEmbed({ tweetId }: Props) {
   }, [theme])
 
   useEffect(() => {
-    setLoading(true)
-    lightRef.current!.innerHTML = ''
-    darkRef.current! .innerHTML = ''
-
+    setLoading(true);
+    lightRef.current!.innerHTML = '';
+    darkRef.current! .innerHTML = '';
+  
     const renderTweets = () => {
       if (!window.twttr?.widgets) {
-        console.error('Twitter widgets not available')
-        setLoading(false)
-        return
+        console.error('Twitter widgets not available');
+        setLoading(false);
+        return;
       }
-
+  
       const lightPromise = window.twttr.widgets.createTweet(
         tweetId,
         lightRef.current!,
         { theme: 'light' }
-      )
+      );
       const darkPromise = window.twttr.widgets.createTweet(
         tweetId,
         darkRef.current!,
         { theme: 'dark' }
-      )
-
-      const activePromise = resolved === 'light' ? lightPromise : darkPromise
+      );
+  
+      const activePromise = resolved === 'light' ? lightPromise : darkPromise;
       activePromise
         .then(() => setLoading(false))
-        .catch(() => setLoading(false))
-    }
-
+        .catch(() => setLoading(false));
+    };
+  
     if (window.twttr?.widgets) {
-      renderTweets()
+      renderTweets();
     } else {
-      const SCRIPT_ID = 'twitter-wjs'
-      let script = document.getElementById(SCRIPT_ID) as HTMLScriptElement|null
-
+      const SCRIPT_ID = 'twitter-wjs';
+      let script = document.getElementById(SCRIPT_ID) as HTMLScriptElement | null;
+  
       if (!script) {
-        script = document.createElement('script')
-        script.id = SCRIPT_ID
-        script.src = 'https://platform.twitter.com/widgets.js'
-        script.async = true
-        script.onload = renderTweets
-        document.body.appendChild(script)
+        script = document.createElement('script');
+        script.id = SCRIPT_ID;
+        script.src = 'https://platform.twitter.com/widgets.js';
+        script.async = true;
+        script.addEventListener('load', renderTweets);
+        document.body.appendChild(script);
+      } else if ((script as any).readyState === 'complete') {
+        renderTweets();
       } else {
-        script.onload = renderTweets
+        script.addEventListener('load', renderTweets);
       }
     }
-  }, [tweetId])
+  }, [tweetId, resolved]);  
 
   return (
     <div className="relative">
