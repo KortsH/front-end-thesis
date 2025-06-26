@@ -6,7 +6,8 @@
     "home": "Avaleht",
     "blockchain": "Plokiahel",
     "quotes": "Tsitaadid",
-    "demo": "Demo"
+    "demo": "Demo",
+    "tracked_people": "Jälgitavad Isikud"
   },
   "home": {
     "title": "Lubatud Sotsiaalmeedia Plokiahel",
@@ -24,7 +25,8 @@
     "note_other_browsers_desc": "See demo töötab ainult Chromiumil põhinevates brauserites. Muude platvormide jaoks võta ühendust arendajaga.",
     "screenshots_coming_soon": "Ekraanipildid varsti saadaval...",
     "view_quotes": "🔍 Vaata Tsitaate",
-    "try_demo": "Proovi Demot"
+    "try_demo": "Proovi Demot",
+    "view_tracked_people": "👥 Vaata Jälgitavaid Isikuid"
   },
   "blockchain": {
     "title": "Plokiahela Uurija",
@@ -77,5 +79,10 @@
     "tech_5": "Kliendipoolne Chrome'i laiendus",
     "prototype_title": "🧪 Tööprototüüp pärisprobleemi jaoks",
     "prototype_content": "See demo on osa VU Amsterdami bakalaureusetööst, mis uurib platvormist sõltumatut, krüptograafiliselt kontrollitavat tsitaatide verifitseerimissüsteemi."
+  },
+  "trackedPeople": {
+    "title": "Jälgitavad Isikud",
+    "add_alert": "Lisa uus jälgitav isik (veel ei tööta)",
+    "add_person": "Lisa Isik"
   }
 }

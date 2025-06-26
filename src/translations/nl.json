@@ -6,7 +6,8 @@
     "home": "Home",
     "blockchain": "Blockchain",
     "quotes": "Citaten",
-    "demo": "Demo"
+    "demo": "Demo",
+    "tracked_people": "Gepersonaliseerde Personen"
   },
   "home": {
     "title": "Toegestane Sociale Media Blockchain",
@@ -24,7 +25,8 @@
     "note_other_browsers_desc": "Deze demo werkt alleen in Chromium-gebaseerde browsers. Neem contact op met de ontwikkelaar voor andere platforms.",
     "screenshots_coming_soon": "Schermafbeeldingen binnenkort beschikbaar...",
     "view_quotes": "🔍 Bekijk Citaten",
-    "try_demo": "Probeer de Demo"
+    "try_demo": "Probeer de Demo",
+    "view_tracked_people": "👥 Bekijk Gepersonaliseerde Personen"
   },
   "blockchain": {
     "title": "Blockchain Verkenner",
@@ -77,5 +79,10 @@
     "tech_5": "Client-side verificatie extensie (Chrome)",
     "prototype_title": "🧪 Een werkend prototype voor een echt probleem",
     "prototype_content": "Deze demo maakt deel uit van een bachelorproef aan de Vrije Universiteit Amsterdam en onderzoekt een platformonafhankelijk, cryptografisch verificatiesysteem voor socialmediacitaten."
+  },
+  "trackedPeople": {
+    "title": "Gepersonaliseerde Personen",
+    "add_alert": "Voeg een nieuwe persoon toe om te volgen (nog niet ondersteund)",
+    "add_person": "Voeg Persoon Toe"
   }
 }

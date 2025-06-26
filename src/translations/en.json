@@ -6,7 +6,8 @@
     "home": "Home",
     "blockchain": "Blockchain",
     "quotes": "Quotes",
-    "demo": "Demo"
+    "demo": "Demo",
+    "tracked_people": "Tracked People"
   },
   "home": {
     "title": "Permissioned Social-Media Chain",
@@ -24,7 +25,8 @@
     "note_other_browsers_desc": "This demo only works on Chromium-based browsers. For other platforms, contact the developer.",
     "screenshots_coming_soon": "Screenshots coming soon...",
     "view_quotes": "🔍 View Quotes",
-    "try_demo": "Try the Demo"
+    "try_demo": "Try the Demo",
+    "view_tracked_people": "👥 View Tracked People"
   },
   "blockchain": {
     "title": "Blockchain Explorer",
@@ -78,5 +80,10 @@
     "tech_5": "Client-side verifier (Chrome extension)",
     "prototype_title": "🧪 A working prototype for a real-world problem",
     "prototype_content": "This demo is part of a bachelor’s thesis at Vrije Universiteit Amsterdam. It explores a platform-independent, tamper-evident verification system for social media quotes, without relying on any single provider."
+  },
+  "trackedPeople": {
+    "title": "Tracked People",
+    "add_alert": "Add a new person to track (not supported yet)",
+    "add_person": "Add Person"
   }
 }
