@@ -31,7 +31,8 @@
   "blockchain": {
     "title": "Blockchain Explorer",
     "description": "A frontend connected to our permissioned-chain backend. Hover a block to reveal its data.",
-    "connected": "Data fetched live from the server at /chain"
+    "connected": "Data fetched live from the server at /chain",
+    "view_merkle_tree": "View Merkle Tree"
   },
   "quotes": {
     "quotes_title": "Quotes Database",

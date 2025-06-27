@@ -31,7 +31,8 @@
   "blockchain": {
     "title": "Blockchain Verkenner",
     "description": "Een frontend verbonden met je permissioned-chain backend. Zweef over een blok om de data te zien.",
-    "connected": "Data live opgehaald van de server via /chain"
+    "connected": "Data live opgehaald van de server via /chain",
+    "view_merkle_tree": "Bekijk Merkle Tree"
   }, 
   "quotes": {
     "quotes_title": "Citaten Database",

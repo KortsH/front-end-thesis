@@ -31,7 +31,8 @@
   "blockchain": {
     "title": "Plokiahela Uurija",
     "description": "Esikülg, mis on ühendatud sinu lubatud plokiahela taustsüsteemiga. Liiguta kursor ploki peale, et näha andmeid.",
-    "connected": "Andmed pärinevad otse serveri endpoint’ist /chain"
+    "connected": "Andmed pärinevad otse serveri endpoint’ist /chain",
+    "view_merkle_tree": "Vaata Merkle Puud"
   },
   "quotes": {
     "quotes_title": "Tsitaatide andmebaas",
